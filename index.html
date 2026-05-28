@@ -3,10 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+   
+   <!-- //font awasome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dynamic-cart</title>
   </head>
   <body>
+
+
+   <section class="productContainer">
+    <div class="productHeadingConatiner">
+      <div class="section-common-heading">Cheakout Thakur Store</div>
+    </div>
+
+    <section class="cardMainContainer">
+      <div class="cardContainer"></div>
+    </section>
+   </section>
+
+
+ <!-- ========== Start Product Templete Section ========== -->
+ 
+
+   <template class="productTemplate">
+    <div class="cardTempleteContainer">
+      <article id="cartValue">
+        <p class="category"></p>
+        <div class="imgConatainer">
+          <img class="cardImage" 
+           src=""
+           alt="">
+        </div>
+
+        <h2 class="productName">Laptop</h2>
+
+        <p class="ratingContainer">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </p>
+
+        <p class="description-box">
+        </p>
+
+        <div class="rateContainer">
+          <p class="price"></p>
+          <p class="actualPrice"></p>
+        </div>
+
+        <div class="stockEnquiary">
+          <p class="stockMsg">Total Stocks Available:</p>
+          <p class="stockQuantity"></p>
+        </div>
+
+        <div class="quantitySelectionBox">
+          <p class="quantityMsg">Quantity(Pieces)</p>
+
+          <div class="quantityBox">
+            <p class="decreaseValue">-</p>
+            <p class="stockCount">1</p>
+            <p class="increaseValue">+</p>
+          </div>
+        </div>
+
+        <button class="addToCart">Add To Cart</button>
+      </article>
+    </div>
+   </template>
+
+    <!-- ========== End Product Templete Section ========== -->
     
     <script type="module" src="./main.js"></script>
   </body>

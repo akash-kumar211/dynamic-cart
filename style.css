@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+article{
+    width: 300px;
+    height: 550px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    & .category{
+        font-size: 14px;
+        color: #888;
+        border: 1px solid #888;
+        border-radius: 10px;
+        padding: 1px 10px;
+        align-self: flex-start;
+    }
+
+    & .imgConatainer{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+
+        & .cardImage{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transform: rotateY(180deg);
+        }
+    }
+
+    & .productName{
+        font-size: 28px;
+        font-weight: bold;
+        align-self: flex-start;
+    }
+
+    & .ratingContainer{
+        color: #f0a52e;
+        font-size: 8px;
+        align-self: flex-start;
+
+        & i{
+            margin-right: -2px;
+        }
+    }
+
+    & .description-box{
+        font-size: 14px;
+        color: #555;
+        align-self: flex-start;
+    }
+
+    & .rateContainer{
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        align-self: flex-start;
+
+        & .price{
+            font-size: 18px;
+            color: #333;
+        }
+
+        & .actualPrice{
+            font-size: 18px;
+            color: #888;
+            text-decoration: line-through;
+        }
+    }
+
+    & .stockEnquiary{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        align-self: flex-start;
+        font-size: 16px;
+
+
+        & .stockMsg{
+            color: #121212;
+        }
+    }
+
+    & .quantitySelectionBox{
+        display: flex;
+       align-self: flex-start;
+       align-items: center;
+       gap: 5px;
+
+        & .quantityMsg{
+            display: flex;
+            
+        }
+
+        & .quantityBox{
+             display: grid;
+             grid-template-columns: repeat(3, 1fr);
+              align-items: center;
+              border: 0.2rem solid rgb(175, 175, 175);
+              border-radius: 0.5rem;
+              margin: 0.4rem 0;
+              justify-items: center;
+
+            & .decreaseValue, & .increaseValue{
+                    background-color: transparent;
+                    color: black;
+                    font-size: 1.4rem;
+                     padding: 0.4rem 1rem;
+                     font-weight: bold;
+                     border: none;
+            }
+        }
+    }
+    
+    & .addToCart{
+        display: flex;
+        align-self: flex-start;
+        background-color: black;
+        color: white;
+        margin-top: 10px;
+        padding: 7px  20px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+}
